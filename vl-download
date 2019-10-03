@@ -13,7 +13,9 @@ import urllib2
 import re
 import os
 import sys
+
 from BeautifulSoup import BeautifulSoup
+
 from optparse import OptionParser
 from operator import itemgetter
 
@@ -43,6 +45,7 @@ if options.url is None:
         # No URL specified
         parser.error("--url option is required")
         sys.exit(1)
+
 if options.outfile is None :
         # Output file not specified
         options.outfile = ""
